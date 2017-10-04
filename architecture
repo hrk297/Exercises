@@ -1,0 +1,39 @@
+House h;
+House h2;
+void setup() {
+  fullScreen (); 
+  h = new House(25,50,200,200);
+  h2 = new House(50,100,400,400);
+}
+void draw(){
+  h.display();
+  h2.display();
+}
+
+class House {
+  int x; 
+  int y; 
+  int w; 
+  int h; 
+  
+  House(int tempX, int tempY, int tempW, int tempH) {
+    x=tempX;
+    y=tempY;
+    w=tempW;
+    h=tempH;
+ }
+  
+  void display() {
+   rectMode(CENTER);  
+fill(0);  
+stroke(255);
+rect(25, 50, 100, 200); 
+ }
+ 
+void update() {
+    stroke(0);
+    if (mousePressed) {
+      stroke(0);
+      fill(255);
+}
+}}
